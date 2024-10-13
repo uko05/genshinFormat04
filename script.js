@@ -255,10 +255,9 @@ function handleImageClick(img, category) {
             // フォーカスが外れたときに保存エリアに転記
             const saveDescriptionLabel = saveArea.querySelector(`.lbl_area[data-src="${src}"]`);
             if (saveDescriptionLabel) {
-                saveDescriptionLabel.textContent = descriptionInput.value; // 入力内容を転記
+		        saveDescriptionLabel.innerHTML = descriptionInput.value.replace(/\n/g, '<br>');
             }
         });
-
         entry.appendChild(imgElement);
         entry.appendChild(nameInput);
         entry.appendChild(descriptionInput);
