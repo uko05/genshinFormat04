@@ -1,5 +1,6 @@
 const imageFolder = 'chara/';
 const imageData = [
+    { src: 'baresa.png', category: 'kaminari' },
     { src: 'mizuki.png', category: 'kaze' },
     { src: 'ranyan.png', category: 'kaze' },
     { src: 'sitorari.png', category: 'koori' },
