@@ -1,114 +1,163 @@
 const imageFolder = 'chara/';
 const imageData = [
-    { src: 'aino.png', category: 'mizu' },
-    { src: 'faruka.png', category: 'kaze' },
-    { src: 'dorin.png', category: 'hi' },
-    { src: 'rauma.png', category: 'kusa' },
-    { src: 'neferu.png', category: 'kusa' },
-    { src: 'hurinzu.png', category: 'kaminari' },
-    { src: 'arisu.png', category: 'hi' },
-    { src: 'inefa.png', category: 'kaminari' },
-    { src: 'skaku.png', category: 'koori' },
-    { src: 'daria.png', category: 'mizu' },
-    { src: 'esuko.png', category: 'koori' },
-    { src: 'ifa.png', category: 'kaze' },
-    { src: 'baresa.png', category: 'kaminari' },
-    { src: 'mizuki.png', category: 'kaze' },
-    { src: 'ranyan.png', category: 'kaze' },
-    { src: 'sitorari.png', category: 'koori' },
-    { src: 'oruron.png', category: 'kaminari' },
-    { src: 'sironen.png', category: 'iwa' },
-    { src: 'AratakiItto.png', category: 'iwa' },
-    { src: 'Albedo.png', category: 'iwa' },
-    { src: 'Arlecchino.png', category: 'hi' },
-    { src: 'AyakaKamisato.png', category: 'koori' },
-    { src: 'KamisatoAyato.png', category: 'mizu' },
-    { src: 'Alhaitham.png', category: 'kusa' },
-    { src: 'amber.png', category: 'hi' },
-    { src: 'Yelan.png', category: 'mizu' },
-    { src: 'Venti.png', category: 'kaze' },
-    { src: 'YunJin.png', category: 'iwa' },
-    { src: 'Xiangling.png', category: 'hi' },
-    { src: 'Emilie.png', category: 'kusa' },
-    { src: 'Eula.png', category: 'koori' },
-    { src: 'YanFei.png', category: 'hi' },
-    { src: 'Kaveh.png', category: 'kusa' },
-    { src: 'Kaeya.png', category: 'koori' },
-    { src: 'KazuhaKaedehara.png', category: 'kaze' },
-    { src: 'Gaming.png', category: 'hi' },
-    { src: 'Ganyu.png', category: 'koori' },
-    { src: 'Xianyun.png', category: 'kaze' },
-    { src: 'Kinich.png', category: 'kusa' },
-    { src: 'Kirara.png', category: 'kusa' },
-    { src: 'Candace.png', category: 'mizu' },
-    { src: 'Ningguang.png', category: 'iwa' },
-    { src: 'KukiShinobu.png', category: 'kaminari' },
-    { src: 'KujouSara.png', category: 'kaminari' },
-    { src: 'Klee.png', category: 'hi' },
-    { src: 'Clorinde.png', category: 'kaminari' },
-    { src: 'Keqing.png', category: 'kaminari' },
-    { src: 'Gorou.png', category: 'iwa' },
-    { src: 'Collei.png', category: 'kusa' },
-    { src: 'Sayu.png', category: 'kaze' },
-    { src: 'Kokomi.png', category: 'mizu' },
-    { src: 'Heizou.png', category: 'kaze' },
-    { src: 'Sigewinne.png', category: 'mizu' },
-    { src: 'Charlotte.png', category: 'koori' },
-    { src: 'Chevreuse.png', category: 'hi' },
-    { src: 'Xiao.png', category: 'kaze' },
-    { src: 'Zhongli.png', category: 'iwa' },
-    { src: 'Shenhe.png', category: 'koori' },
-    { src: 'Jean.png', category: 'kaze' },
-    { src: 'Xinyan.png', category: 'hi' },
-    { src: 'Scaramouche.png', category: 'kaze' },
-    { src: 'Sucrose.png', category: 'kaze' },
-    { src: 'Sethos.png', category: 'kaminari' },
-    { src: 'Cyno.png', category: 'kaminari' },
-    { src: 'Tartaglia.png', category: 'mizu' },
-    { src: 'Chiori.png', category: 'iwa' },
-    { src: 'Chongyun.png', category: 'koori' },
-    { src: 'Diona.png', category: 'koori' },
-    { src: 'Dehya.png', category: 'hi' },
-    { src: 'Tighnari.png', category: 'kusa' },
-    { src: 'Diluc.png', category: 'hi' },
-    { src: 'Thoma.png', category: 'hi' },
-    { src: 'Dori.png', category: 'kaminari' },
-    { src: 'Navia.png', category: 'iwa' },
-    { src: 'Yoimiya.png', category: 'hi' },
-    { src: 'Qiqi.png', category: 'koori' },
-    { src: 'Nahida.png', category: 'kusa' },
-    { src: 'Nilou.png', category: 'mizu' },
-    { src: 'Neuvillette.png', category: 'mizu' },
-    { src: 'Noelle.png', category: 'iwa' },
-    { src: 'barbara.png', category: 'mizu' },
-    { src: 'Baizhu.png', category: 'kusa' },
-    { src: 'Faruzan.png', category: 'kaze' },
-    { src: 'Fischl.png', category: 'kaminari' },
-    { src: 'Hutao.png', category: 'hi' },
-    { src: 'Furina.png', category: 'mizu' },
-    { src: 'Freminet.png', category: 'koori' },
-    { src: 'Bennett.png', category: 'hi' },
-    { src: 'Beidou.png', category: 'kaminari' },
-    { src: 'Mika.png', category: 'koori' },
-    { src: 'Mualani.png', category: 'mizu' },
-    { src: 'Mona.png', category: 'mizu' },
-    { src: 'YaeMiko.png', category: 'kaminari' },
-    { src: 'Xingqiu.png', category: 'mizu' },
-    { src: 'Yaoyao.png', category: 'kusa' },
-    { src: 'Raiden.png', category: 'kaminari' },
-    { src: 'Wriothesley.png', category: 'koori' },
-    { src: 'Lisa.png', category: 'kaminari' },
-    { src: 'Lyney.png', category: 'hi' },
-    { src: 'Lynette.png', category: 'kaze' },
-    { src: 'Layla.png', category: 'koori' },
-    { src: 'Razor.png', category: 'kaminari' },
-    { src: 'rosaria.png', category: 'koori' },
-    { src: 'Mavuika.png', category: 'hi' },
-    { src: 'Iansan.png', category: 'kaminari' },
-    { src: 'Chasca.png', category: 'kaze' },
-    { src: 'Kachina.png', category: 'iwa' }
+    { src: 'shojo.png', category: 'chara' },
+    { src: 'kairai.png', category: 'chara' },
+    { src: 'yafoda.png', category: 'chara' },
+    { src: 'niko.png', category: 'chara' },
+    { src: 'arisu.png', category: 'chara' },
+    { src: 'faruka.png', category: 'chara' },
+    { src: 'dorin.png', category: 'chara' },
+    { src: 'neferu.png', category: 'chara' },
+    { src: 'rauma.png', category: 'chara' },
+    { src: 'hurinzu.png', category: 'chara' },
+    { src: 'aino.png', category: 'chara' },
+    { src: 'inefa.png', category: 'chara' },
+    { src: 'skaku.png', category: 'chara' },
+    { src: 'daria.png', category: 'chara' },
+    { src: 'esuko.png', category: 'chara' },
+    { src: 'ifa.png', category: 'chara' },
+    { src: 'baresa.png', category: 'chara' },
+    { src: 'Iansan.png', category: 'chara' },
+    { src: 'mizuki.png', category: 'chara' },
+    { src: 'ranyan.png', category: 'chara' },
+    { src: 'oruron.png', category: 'chara' },
+    { src: 'sitorari.png', category: 'chara' },
+    { src: 'Mavuika.png', category: 'chara' },
+    { src: 'sironen.png', category: 'chara' },
+    { src: 'Chasca.png', category: 'chara' },
+    { src: 'Kinich.png', category: 'chara' },
+    { src: 'Kachina.png', category: 'chara' },
+    { src: 'Mualani.png', category: 'chara' },
+    { src: 'Emilie.png', category: 'chara' },
+    { src: 'Sigewinne.png', category: 'chara' },
+    { src: 'Clorinde.png', category: 'chara' },
+    { src: 'Sethos.png', category: 'chara' },
+    { src: 'Arlecchino.png', category: 'chara' },
+    { src: 'Chiori.png', category: 'chara' },
+    { src: 'Gaming.png', category: 'chara' },
+    { src: 'Xianyun.png', category: 'chara' },
+    { src: 'Chevreuse.png', category: 'chara' },
+    { src: 'Navia.png', category: 'chara' },
+    { src: 'Charlotte.png', category: 'chara' },
+    { src: 'Furina.png', category: 'chara' },
+    { src: 'Neuvillette.png', category: 'chara' },    
+    { src: 'Wriothesley.png', category: 'chara' },
+    { src: 'Freminet.png', category: 'chara' },
+    { src: 'Lyney.png', category: 'chara' },
+    { src: 'Lynette.png', category: 'chara' },
+    { src: 'Kirara.png', category: 'chara' },
+    { src: 'Kaveh.png', category: 'chara' },
+    { src: 'Baizhu.png', category: 'chara' },
+    { src: 'Mika.png', category: 'chara' },
+    { src: 'Dehya.png', category: 'chara' },
+    { src: 'Alhaitham.png', category: 'chara' },
+    { src: 'Yaoyao.png', category: 'chara' },
+    { src: 'Scaramouche.png', category: 'chara' },
+    { src: 'Faruzan.png', category: 'chara' },
+    { src: 'Layla.png', category: 'chara' },
+    { src: 'Nahida.png', category: 'chara' },
+    { src: 'Nilou.png', category: 'chara' },
+    { src: 'Candace.png', category: 'chara' },    
+    { src: 'Cyno.png', category: 'chara' },   
+    { src: 'Dori.png', category: 'chara' },
+    { src: 'Collei.png', category: 'chara' },
+    { src: 'Tighnari.png', category: 'chara' },
+    { src: 'Heizou.png', category: 'chara' },
+    { src: 'KukiShinobu.png', category: 'chara' }, 
+    { src: 'Yelan.png', category: 'chara' },   
+    { src: 'KamisatoAyato.png', category: 'chara' },
+    { src: 'YaeMiko.png', category: 'chara' },
+    { src: 'YunJin.png', category: 'chara' },
+    { src: 'Shenhe.png', category: 'chara' },
+    { src: 'AratakiItto.png', category: 'chara' },
+    { src: 'Gorou.png', category: 'chara' },
+    { src: 'Thoma.png', category: 'chara' },
+    { src: 'Kokomi.png', category: 'chara' },
+    { src: 'KujouSara.png', category: 'chara' },
+    { src: 'Raiden.png', category: 'chara' },
+    { src: 'Sayu.png', category: 'chara' },
+    { src: 'Yoimiya.png', category: 'chara' },
+    { src: 'AyakaKamisato.png', category: 'chara' },
+    { src: 'KazuhaKaedehara.png', category: 'chara' },
+    { src: 'Eula.png', category: 'chara' },
+    { src: 'YanFei.png', category: 'chara' },
+    { src: 'rosaria.png', category: 'chara' },
+    { src: 'Hutao.png', category: 'chara' },
+    { src: 'Xiao.png', category: 'chara' },
+    { src: 'Ganyu.png', category: 'chara' },
+    { src: 'Albedo.png', category: 'chara' },
+    { src: 'Zhongli.png', category: 'chara' },
+    { src: 'Xinyan.png', category: 'chara' },
+    { src: 'Tartaglia.png', category: 'chara' },
+    { src: 'Diona.png', category: 'chara' },
+    { src: 'Klee.png', category: 'chara' }, 
+    { src: 'Qiqi.png', category: 'chara' },
+    { src: 'Keqing.png', category: 'chara' },    
+    { src: 'Ningguang.png', category: 'chara' },
+    { src: 'Xiangling.png', category: 'chara' },
+    { src: 'Xingqiu.png', category: 'chara' },
+    { src: 'Chongyun.png', category: 'chara' },
+    { src: 'Beidou.png', category: 'chara' },
+    { src: 'Venti.png', category: 'chara' },
+    { src: 'Diluc.png', category: 'chara' },
+    { src: 'Mona.png', category: 'chara' },
+    { src: 'Jean.png', category: 'chara' },
+    { src: 'Razor.png', category: 'chara' },
+    { src: 'Noelle.png', category: 'chara' },
+    { src: 'barbara.png', category: 'chara' },
+    { src: 'Fischl.png', category: 'chara' },
+    { src: 'Bennett.png', category: 'chara' },
+    { src: 'Sucrose.png', category: 'chara' },
+    { src: 'Lisa.png', category: 'chara' },
+    { src: 'Kaeya.png', category: 'chara' },
+    { src: 'amber.png', category: 'chara' },
+    
+    { src: 'version/5_8.png', category: 'version' },
+    { src: 'version/5_7.png', category: 'version' },
+    { src: 'version/5_6.png', category: 'version' },
+    { src: 'version/5_5.png', category: 'version' },
+    { src: 'version/5_4.png', category: 'version' },
+    { src: 'version/5_3.png', category: 'version' },
+    { src: 'version/5_2.png', category: 'version' },
+    { src: 'version/5_1.png', category: 'version' },
+    { src: 'version/5_0.png', category: 'version' },
+    { src: 'version/4_8.png', category: 'version' },
+    { src: 'version/4_7.png', category: 'version' },
+    { src: 'version/4_6.png', category: 'version' },
+    { src: 'version/4_5.png', category: 'version' },
+    { src: 'version/4_4.png', category: 'version' },
+    { src: 'version/4_3.png', category: 'version' },
+    { src: 'version/4_2.png', category: 'version' },
+    { src: 'version/4_1.png', category: 'version' },
+    { src: 'version/4_0.png', category: 'version' },
+    { src: 'version/3_8.png', category: 'version' },
+    { src: 'version/3_7.png', category: 'version' },
+    { src: 'version/3_6.png', category: 'version' },
+    { src: 'version/3_5.png', category: 'version' },
+    { src: 'version/3_4.png', category: 'version' },
+    { src: 'version/3_3.png', category: 'version' },
+    { src: 'version/3_2.png', category: 'version' },
+    { src: 'version/3_1.png', category: 'version' },
+    { src: 'version/3_0.png', category: 'version' },
+    { src: 'version/2_8.png', category: 'version' },
+    { src: 'version/2_7.png', category: 'version' },
+    { src: 'version/2_6.png', category: 'version' },
+    { src: 'version/2_5.png', category: 'version' },
+    { src: 'version/2_4.png', category: 'version' },
+    { src: 'version/2_3.png', category: 'version' },
+    { src: 'version/2_2.png', category: 'version' },
+    { src: 'version/2_1.png', category: 'version' },
+    { src: 'version/2_0.png', category: 'version' },
+    { src: 'version/1_6.png', category: 'version' },
+    { src: 'version/1_5.png', category: 'version' },
+    { src: 'version/1_4.png', category: 'version' },
+    { src: 'version/1_3.png', category: 'version' },
+    { src: 'version/1_2.png', category: 'version' },
+    { src: 'version/1_1.png', category: 'version' },
+    { src: 'version/1_0.png', category: 'version' }
 ];
 
+const MAX_SELECTION = 1;
 const SELECTED_LABEL = '☑';
 
 // タブごとの選択状態を管理するためのオブジェクト
@@ -160,203 +209,142 @@ function updateTabSelectionsDisplay() {
 function loadImages() {
     const tabs = document.querySelectorAll('.tab-label');
     const tabContents = document.querySelectorAll('.tab-content');
-    const cells = document.querySelectorAll('.cell');
 
     tabs.forEach(tab => {
-        tab.addEventListener('click', () => {
-            const category = tab.dataset.category;
-            
-            // すでにアクティブなタブを再度クリックした場合、何もしない
-            if (tab.classList.contains('active')) {
-                return; 
-            }
-            // アクティブなタブを更新
-            tabs.forEach(t => t.classList.remove('active'));
-            tab.classList.add('active');
+      tab.addEventListener('click', () => {
+        const tabKey   = tab.getAttribute('for');   // ← 追加: タブ固有キー
+        const category = tab.dataset.category;      // ← 表示カテゴリ（共通でOK）
 
-            // 現在のタブコンテンツを表示
-            tabContents.forEach(content => {
-                if (content.previousElementSibling === tab) {
-                    updateImageList(category, content.querySelector('.image-list'));
-                    restoreSelectionState(category); // 選択状態の復元
-                }
-            });
+        if (tab.classList.contains('active')) return;
+
+        tabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+
+        tabContents.forEach(content => {
+          if (content.previousElementSibling === tab) {
+            const listEl = content.querySelector('.image-list');
+            updateImageList(category, listEl, tabKey);
+            restoreSelectionState(tabKey, category, listEl);
+          }
         });
+      });
     });
 
-    // 初期表示（最初のタブをアクティブにする）
-    tabs[0].click();
+    tabs[0].click(); // 初期表示
+  
+    function updateImageList(category, container, tabKey) {
+      container.innerHTML = '';
+      const filtered = imageData.filter(img => img.category === category);
 
-    function updateImageList(category, container) {
-        container.innerHTML = '';
-        const filteredImages = imageData.filter(img => img.category === category);
+      filtered.forEach(imgData => {
+        const wrap = document.createElement('div');
+        wrap.classList.add('image-container');
 
-        filteredImages.forEach(imgData => {
-            const imgContainer = document.createElement('div'); // 画像を囲むコンテナ
-            imgContainer.classList.add('image-container');
+        const img = document.createElement('img');
+        img.src = `${imageFolder}${imgData.src}`;
+        img.dataset.src = imgData.src;
+        img.dataset.category = imgData.category;
+        img.classList.add('image-item');
+        img.addEventListener('click', () => handleImageClick(img, tabKey, container));
 
-            const img = document.createElement('img');
-            img.src = `${imageFolder}${imgData.src}`;
-            img.dataset.src = imgData.src;
-            img.dataset.category = imgData.category;
-            img.classList.add('image-item');
-            img.addEventListener('click', () => handleImageClick(img, category));
-
-            imgContainer.appendChild(img);
-            container.appendChild(imgContainer);
-        });
+        wrap.appendChild(img);
+        container.appendChild(wrap);
+      });
     }
+    
+    function setSaveImage(tabKey, src) {
+      // 該当する保存枠を探す
+      const entry = document.querySelector(`#savearea .entry[data-key="${tabKey}"]`);
+      if (!entry) return;
 
-function handleImageClick(img, category) {
-    const src = img.dataset.src;
-    const gridContainer = document.getElementById('grid');
-    const saveArea = document.getElementById('imagearea'); // 保存エリアを取得
-    const tabCategory = document.querySelector('.tab-label.active').dataset.category;
+      const img = entry.querySelector('.imgheight img');
+      if (!img) return;
 
-    // 選択状態を取得
-    let selectedCategory = tabSelections[tabCategory] || [];
-
-    // 選択済みかどうかを判定
-    const isSelected = selectedCategory.includes(src);
-
-    // 選択解除時
-    if (isSelected) {
-        img.classList.remove('selected');
-        removeNumberingAndBorder(img.parentElement);  // コンテナから番号と枠を削除
-
-        const existingEntry = gridContainer.querySelector(`img[data-src="${src}"]`);
-        if (existingEntry) {
-            existingEntry.parentElement.remove(); // 既存のセットを削除
-        }
-
-        // 保存エリアからも削除
-        const existingSaveEntry = saveArea.querySelector(`img[data-src="${src}"]`);
-        if (existingSaveEntry) {
-            existingSaveEntry.parentElement.remove(); // 保存エリアの既存のセットを削除
-        }
-
-        // 選択リストから画像を削除
-        selectedCategory = selectedCategory.filter(item => item !== src);
-    } else {
-        // 選択時
-        img.classList.add('selected');
-        selectedCategory.push(src);  // 選択リストに画像を追加
-        addNumberingAndBorder(img.parentElement, selectedCategory.length);  // コンテナに番号と枠を追加
-
-        // 新しいセットを作成
-        const entry = document.createElement('div');
-        entry.className = 'entry'; // CSSクラスを適用
-
-        const imgElement = document.createElement('img');
-        imgElement.src = `${imageFolder}${src}`;
-        imgElement.alt = src;
-        imgElement.dataset.src = src;
-
-        const nameInput = document.createElement('input');
-        nameInput.type = 'text';
-
-        nameInput.addEventListener('blur', () => {
-            // フォーカスが外れたときに保存エリアに転記
-            const saveNameLabel = saveArea.querySelector(`.lbl_name[data-src="${src}"]`);
-            if (saveNameLabel) {
-                saveNameLabel.textContent = nameInput.value; // 入力内容を転記
-                saveNameLabel.style.height = '25px'; // 高さをリセット
-            }
-        });
-
-        const descriptionInput = document.createElement('textarea');
-
-        descriptionInput.addEventListener('blur', () => {
-            // フォーカスが外れたときに保存エリアに転記
-            const saveDescriptionLabel = saveArea.querySelector(`.lbl_area[data-src="${src}"]`);
-            if (saveDescriptionLabel) {
-		        saveDescriptionLabel.innerHTML = descriptionInput.value.replace(/\n/g, '<br>');
-            }
-        });
-        entry.appendChild(imgElement);
-        entry.appendChild(nameInput);
-        entry.appendChild(descriptionInput);
-
-        gridContainer.appendChild(entry);
-
-        // 保存エリアにも同じものを作成
-        const saveEntry = document.createElement('div');
-        saveEntry.className = 'entry'; // CSSクラスを適用
-
-        const saveImgElement = document.createElement('img');
-        saveImgElement.src = `${imageFolder}${src}`;
-        saveImgElement.alt = src;
-        saveImgElement.dataset.src = src;
-
-        // 名前と説明のラベルを作成
-        const saveNameLabel = document.createElement('label');
-        saveNameLabel.textContent = ' '; // 初期値を設定（ここでは空）
-        saveNameLabel.className = 'lbl_name'; // CSSクラスを適用
-        saveNameLabel.dataset.src = src; // 画像のsrcをデータ属性として追加
-
-        const saveDescriptionLabel = document.createElement('label');
-        saveDescriptionLabel.textContent = ' '; // 初期値を設定（ここでは空）
-        saveDescriptionLabel.className = 'lbl_area'; // CSSクラスを適用
-        saveDescriptionLabel.dataset.src = src; // 画像のsrcをデータ属性として追加
-
-        saveEntry.appendChild(saveImgElement);
-        saveEntry.appendChild(saveNameLabel);
-        saveEntry.appendChild(saveDescriptionLabel);
-
-        saveArea.appendChild(saveEntry);
-        
-        // 最初のラベル更新を行う
-        saveNameLabel.textContent = nameInput.value; // 入力内容を転記
-        saveDescriptionLabel.textContent = descriptionInput.value; // 入力内容を転記
+      if (src) {
+        img.src = `${imageFolder}${src}`;  // フォルダ＋ファイル名
+        img.alt = src;
+        img.dataset.src = src;
+      } else {
+        // 解除時は空にする
+        img.removeAttribute('src');
+        img.removeAttribute('alt');
+        img.removeAttribute('data-src');
+      }
     }
+    
+function moveToNextTab(currentTabKey) {
+  const currentInput = document.getElementById(currentTabKey);
+  if (!currentInput) return;
 
-    // 更新された選択リストをtabSelectionsに保存
-    tabSelections[tabCategory] = selectedCategory;
-
-    // 表示を更新
-    updateImageNumbers(tabCategory);  // 番号の更新も行う
+  // 次のinput(tab)を探す
+  let nextInput = currentInput;
+  while ((nextInput = nextInput.nextElementSibling)) {
+    if (nextInput.tagName === "INPUT" && nextInput.type === "radio") {
+      nextInput.checked = true;                 // ラジオON
+      nextInput.nextElementSibling.click();     // ペアのlabelをクリック
+      break;
+    }
+  }
 }
+    function handleImageClick(img, tabKey, scopeEl) {
+      const src = img.dataset.src;
+      let selected = tabSelections[tabKey] || [];
+      const isSelected = selected.includes(src);
 
-
-    function updateTabState(tabCategory) {
-        // 既存の選択リストを取得
-        const selectedCategory = tabSelections[tabCategory] || [];
-
-        // 全画像の選択状態をクリア
-        document.querySelectorAll('.image-grid img').forEach(img => {
-            img.classList.remove('selected');
-            removeNumberingAndBorder(img.parentElement);  // 全ての画像から枠と番号をクリア
-        });
-
-        // 選択されている画像を再度選択状態にする
-        selectedCategory.forEach((src, index) => {
-            const img = document.querySelector(`img[data-src="${src}"]`);
-            if (img) {
-                img.classList.add('selected');
-                addNumberingAndBorder(img.parentElement, index + 1);  // 画像に番号と枠を付ける
-            }
-        });
-        tabSelections[tabCategory] = selectedCategory; // 選択状態を更新
-        //updateTabSelectionsDisplay();
-    }
-    
-    function addNumberingAndBorder(container, number) {
-        // 青い枠と番号を追加（コンテナに）
-        container.style.outline = '2px solid blue'; // 枠の代わりにアウトラインを追加
-        let label = container.querySelector('.selected-label');
-        if (!label) {
-            label = document.createElement('div');
-            label.className = 'selected-label';
-            container.appendChild(label);
+      if (isSelected) {
+        img.classList.remove('selected');
+        removeNumberingAndBorder(img.parentElement);
+        selected = selected.filter(s => s !== src);
+      } else {
+        if (selected.length >= MAX_SELECTION) {
+          alert('選択できる画像は1枚までです');
+          return;
         }
-        label.textContent = SELECTED_LABEL; // 定数で管理
+        img.classList.add('selected');
+        selected.push(src);
+        addNumberingAndBorder(img.parentElement, selected.length);
+        
+  moveToNextTab(tabKey);
+      }
+
+      tabSelections[tabKey] = selected;
+      
+      setSaveImage(tabKey, selected[0] || null);
+  
+      updateImageNumbers(tabKey, scopeEl);
     }
-    
+
+    function updateImageNumbers(tabKey, scopeEl) {
+      const selected = tabSelections[tabKey] || [];
+
+      // このタブ内だけクリアして付け直す
+      scopeEl.querySelectorAll('.image-container').forEach(c => {
+        c.style.outline = 'none';
+        const lbl = c.querySelector('.selected-label');
+        if (lbl) lbl.remove();
+      });
+
+      selected.forEach((src, idx) => {
+        const img = scopeEl.querySelector(`.image-item[data-src="${src}"]`);
+        if (img) addNumberingAndBorder(img.parentElement, idx + 1);
+      });
+    }
+
+    function addNumberingAndBorder(container, number) {
+      container.style.outline = '2px solid blue';
+      let label = container.querySelector('.selected-label');
+      if (!label) {
+        label = document.createElement('div');
+        label.className = 'selected-label';
+        container.appendChild(label);
+      }
+      label.textContent = SELECTED_LABEL;
+    }
+
     function removeNumberingAndBorder(container) {
-        // 青い枠と番号を削除
-        container.style.outline = 'none'; // アウトラインをリセット
-        const label = container.querySelector('.selected-label');
-        if (label) label.remove();
+      container.style.outline = 'none';
+      const label = container.querySelector('.selected-label');
+      if (label) label.remove();
     }
 
     function updateImageNumbers(tabCategory) {
@@ -371,26 +359,17 @@ function handleImageClick(img, category) {
         //updateTabSelectionsDisplay();
     }
 
-    function restoreSelectionState(category) {
-        const selectedCategory = tabSelections[category] || [];
-
-        // 青枠と☑の復元
-        const imageContainers = document.querySelectorAll(`.tab-content .image-container .image-item[data-category="${category}"]`);
-        imageContainers.forEach(img => {
-            if (selectedCategory.includes(img.dataset.src)) {
-                const container = img.parentElement;
-                const selectedIndex = selectedCategory.indexOf(img.dataset.src);
-                addNumberingAndBorder(container, selectedIndex + 1);  // ラベルと青枠を追加
-            }
-        });
-
-        //tabSelections[tabCategory] = selectedCategory; // 選択状態を更新
-        //updateTabSelectionsDisplay();
-        
-        // ラベルの更新
-        updateImageNumbers(category);
+    function restoreSelectionState(tabKey, category, scopeEl) {
+      const selected = tabSelections[tabKey] || [];
+      scopeEl.querySelectorAll(`.image-item[data-category="${category}"]`).forEach(img => {
+        if (selected.includes(img.dataset.src)) {
+          addNumberingAndBorder(img.parentElement, selected.indexOf(img.dataset.src) + 1);
+        }
+      });
+      updateImageNumbers(tabKey, scopeEl);
+      setSaveImage(tabKey, selected[0] || null);
     }
-    
+
     // 保存ボタンのクリックイベントを追加
     const saveButton = document.getElementById('save-button');
     if (saveButton) {
@@ -425,7 +404,7 @@ function saveImage() {
             const seconds = String(now.getSeconds()).padStart(2, '0');
 
             const formattedDate = `${year}${month}${day}_${hours}${minutes}${seconds}`;
-            link.download = `原神フリーフォーマット_${formattedDate}.png`; // ファイル名の変更
+            link.download = `原神チェックシート_${formattedDate}.png`; // ファイル名の変更
             
             link.click();
         }, 'image/png');
@@ -438,36 +417,4 @@ function saveImage() {
 
 document.addEventListener('DOMContentLoaded', () => {
     loadImages();
-
-    const sizeOptions = document.querySelectorAll('input[name="size-option"]');
-    
-    sizeOptions.forEach(option => {
-        option.addEventListener('change', (event) => {
-            const size = event.target.value;
-
-            // 全ての名前入力欄、説明入力欄、エントリーを取得
-            const descriptionTextareas = document.querySelectorAll('textarea');
-            const descriptionLabelareas = document.querySelectorAll('.lbl_area'); // ピリオドを追加
-            const entries = document.querySelectorAll('.entry');
-
-            // 全ての入力欄とエントリーのクラスをリセットして、サイズに応じたクラスを追加
-            descriptionTextareas.forEach(descriptionTextarea => {
-                descriptionTextarea.className = ''; // クラスリセット
-                descriptionTextarea.classList.add(size); // サイズクラスを追加
-            });
-
-            descriptionLabelareas.forEach(descriptionLabel => {
-                descriptionLabel.className = 'lbl_area'; // 基本クラスを設定
-                descriptionLabel.classList.add(size); // サイズクラスを追加
-            });
-
-            // エントリーのサイズも変更
-            entries.forEach(entry => {
-                entry.className = 'entry'; // 基本クラスをリセット
-                entry.classList.add(size); // サイズクラスを追加
-            });
-
-            console.log(`Size changed to: ${size}`);
-        });
-    });
 });
