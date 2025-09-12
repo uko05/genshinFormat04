@@ -1,5 +1,6 @@
 const imageFolder = 'chara/';
 const imageData = [
+    { src: 'yafoda.png', category: 'kaze' },
     { src: 'aino.png', category: 'mizu' },
     { src: 'faruka.png', category: 'kaze' },
     { src: 'dorin.png', category: 'hi' },
@@ -439,6 +440,19 @@ function saveImage() {
 document.addEventListener('DOMContentLoaded', () => {
     loadImages();
 
+    const sidebar = document.getElementById('sidebar');
+    const sizeOption = document.querySelectorAll('input[name="size-option"]');
+
+    sizeOption.forEach(option => {
+        option.addEventListener('change', (event) => {
+            if (event.target.value === 'default') {
+                sidebar.style.display = 'block';   // ← 左バー表示
+            } else if (event.target.value === 'hakai') {
+                sidebar.style.display = 'none';    // ← 左バー非表示
+            }
+        });
+    });
+    
     const sizeOptions = document.querySelectorAll('input[name="size-option"]');
     
     sizeOptions.forEach(option => {
