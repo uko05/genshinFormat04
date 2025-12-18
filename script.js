@@ -2,6 +2,7 @@ const imageFolder = 'chara/';
 const imageData = [
     { src: 'iruga.png', category: 'iwa' },
     { src: 'shihaku.png', category: 'iwa' },
+    { src: 'shojo.png', category: 'mizu' },
     { src: 'yafoda.png', category: 'kaze' },
     { src: 'aino.png', category: 'mizu' },
     { src: 'faruka.png', category: 'kaze' },
