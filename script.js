@@ -37,6 +37,7 @@ const imageData = [
     { src: 'Xingqiu.png', category: 'mizu' },
     { src: 'barbara.png', category: 'mizu' },
     
+    { src: 'rooen.png', category: 'koori' },
     { src: 'skaku.png', category: 'koori' },
     { src: 'esuko.png', category: 'koori' },
     { src: 'sitorari.png', category: 'koori' },
