@@ -106,6 +106,7 @@ const imageData = [
     { src: 'Jean.png', category: 'kaze' },
     { src: 'Sucrose.png', category: 'kaze' },
     
+    { src: 'linnea.png', category: 'iwa' },
     { src: 'shihaku.png', category: 'iwa' },
     { src: 'iruga.png', category: 'iwa' },
     { src: 'sironen.png', category: 'iwa' },
