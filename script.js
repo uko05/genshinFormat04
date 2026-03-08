@@ -73,7 +73,7 @@ const imageData = [
     { src: 'Fischl.png', category: 'kaminari' },
     { src: 'Beidou.png', category: 'kaminari' },    
     { src: 'Razor.png', category: 'kaminari' },
-    { src: 'lisa.png', category: 'kaminari' },
+    { src: 'Lisa.png', category: 'kaminari' },
     
     { src: 'neferu.png', category: 'kusa' },
     { src: 'rauma.png', category: 'kusa' },
