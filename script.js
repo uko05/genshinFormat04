@@ -1,4 +1,4 @@
-const imageFolder = 'chara/';
+const imageFolder = 'https://cdn.jsdelivr.net/gh/uko05/99_SharedImage@main/01_Genshin/chara_full/';
 const imageData = [
     { src: 'niko.png', category: 'hi' },
     { src: 'arisu.png', category: 'hi' },
