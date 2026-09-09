@@ -465,10 +465,10 @@ function saveImage() {
             const seconds = String(now.getSeconds()).padStart(2, '0');
 
             const formattedDate = `${year}${month}${day}_${hours}${minutes}${seconds}`;
-            link.download = `原神フリーフォーマット_${formattedDate}.png`; // ファイル名の変更
-            
+            link.download = `原神フリーフォーマット_${formattedDate}.jpg`; // ファイル名の変更
+
             link.click();
-        }, 'image/png');
+        }, 'image/jpeg', 0.92);
     }).catch(error => {
         console.error('Error capturing image:', error);
     });
